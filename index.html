@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homtrya | Más administración, fácil, rápido y seguro - PropTech AI</title>
+    <meta name="description" content="Homtrya optimiza todos los procesos de administración de copropiedades mediante la digitalización, automatización y agentización con IA. Mayor control para consejos, ahorro en presupuesto y máxima satisfacción para residentes.">
+    <meta name="keywords" content="Homtrya, administración de copropiedades, propiedad horizontal, software condominios, agentes de IA, automatización edificios, presupuesto copropiedad, asamblea virtual">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas Particles -->
+    <canvas id="particle-canvas"></canvas>
+    <div class="bg-grid-pattern"></div>
+    <div class="bg-ambient-glow glow-hero-top"></div>
+    <div class="bg-ambient-glow glow-features-left"></div>
+    <div class="bg-ambient-glow glow-cta-center"></div>
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+    <header>
+        <nav class="navbar" id="navbar" aria-label="Navegación principal">
+            <div class="container nav-container">
+                <a href="#hero" class="nav-brand" id="brand-logo-link">
+                    <img src="images/logo.png" alt="Homtrya Logo" class="brand-logo-img" width="42" height="42">
+                    <span class="brand-text">Homtrya</span>
+                    <span class="brand-badge">AI PropTech</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#agentes" class="nav-link">Agentes IA</a></li>
+                    <li><a href="#servicios" class="nav-link">Soluciones</a></li>
+                    <li><a href="#ecosistema" class="nav-link">Ecosistema</a></li>
+                    <li><a href="#calculadora" class="nav-link">Calculadora ROI</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#demo" class="btn btn-secondary btn-sm">Ver Consola</a>
+                    <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+                </div>
+
+                <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Abrir menú de navegación">☰</button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="nav-links">
+                <li><a href="#agentes" class="nav-link">Agentes IA</a></li>
+                <li><a href="#servicios" class="nav-link">Soluciones</a></li>
+                <li><a href="#ecosistema" class="nav-link">Ecosistema</a></li>
+                <li><a href="#calculadora" class="nav-link">Calculadora ROI</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+                <a href="#demo" class="btn btn-secondary">Ver Consola</a>
+                <a href="#contacto" class="btn btn-primary">Solicitar Demo Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =====================================================
+             1. HERO SECTION
+             ===================================================== -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Plataforma SaaS con Agentes Autónomos de IA</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Más administración, <br>
+                        <span class="gradient-text">fácil, rápido y seguro.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Optimización total de todos los procesos de administración de copropiedades mediante digitalización, automatización inteligente y agentización con IA. Elevamos la calidad de vida de residentes, empoderamos al consejo y garantizamos el control financiero estricto.
+                    </p>
+
+                    <div class="hero-stats-row">
+                        <div class="hero-mini-stat">
+                            <span class="stat-number">-85%</span>
+                            <span class="stat-label">Tiempo de Gestión</span>
+                        </div>
+                        <div class="hero-mini-stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Atención con Agentes</span>
+                        </div>
+                        <div class="hero-mini-stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Control Presupuestal</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#contacto" class="btn btn-primary btn-lg" id="hero-cta-demo">
+                            <span>Agendar Demo Personalizada</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#agentes" class="btn btn-secondary btn-lg" id="hero-cta-explore">
+                            <span>Explorar Agentes IA</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-guarantee">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        <span>Cumplimiento estricto de la Ley de Propiedad Horizontal y Protección de Datos.</span>
+                    </div>
+                </div>
+
+                <!-- Hero Visual with 3D Float & Glow -->
+                <div class="hero-visual-wrapper">
+                    <div class="hero-visual-glow"></div>
+                    <div class="hero-visual-container">
+                        <img src="images/hero_visual.png" alt="Homtrya PropTech AI Holographic Ecosystem" class="hero-main-img" width="1200" height="1200" loading="eager">
+                        
+                        <!-- Floating Interactive Badges -->
+                        <div class="hero-floating-card floating-card-1">
+                            <div class="floating-icon">⚡</div>
+                            <div class="floating-info">
+                                <h5>Agente IA Activo</h5>
+                                <p>Resolviendo PQR #8920 en 1.2s</p>
+                            </div>
+                        </div>
+
+                        <div class="hero-floating-card floating-card-2">
+                            <div class="floating-icon">📊</div>
+                            <div class="floating-info">
+                                <h5>Presupuesto Auditado</h5>
+                                <p>100% Conciliado en tiempo real</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             2. METRICS & SOCIAL PROOF BAR
+             ===================================================== -->
+        <section class="social-proof-section reveal-on-scroll">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value counter-anim" data-target="350" data-prefix="+">0</div>
+                        <div class="metric-label">Copropiedades y Edificios Optimizados</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value counter-anim" data-target="85" data-suffix="%">0</div>
+                        <div class="metric-label">Disminución en Tiempos de Respuesta</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value counter-anim" data-target="100" data-suffix="%">0</div>
+                        <div class="metric-label">Cumplimiento Presupuestal y Legal</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value counter-anim" data-target="45" data-prefix="+" data-suffix="K">0</div>
+                        <div class="metric-label">Residentes y Copropietarios Conectados</div>
+                    </div>
+                </div>
+
+                <div class="partners-block">
+                    <div class="partners-title">Integrado con los estándares tecnológicos y regulatorios más exigentes</div>
+                    <div class="partners-row">
+                        <div class="partner-item"><span>⚡</span> AWS CLOUD SAAS</div>
+                        <div class="partner-item"><span>🔒</span> ISO/IEC 27001 DATA</div>
+                        <div class="partner-item"><span>⚖️</span> LEY PROPIEDAD HORIZONTAL</div>
+                        <div class="partner-item"><span>💳</span> STRIPE & PAGOS SEGUROS</div>
+                        <div class="partner-item"><span>🏢</span> PROPTECH ALLIANCE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             3. INTERACTIVE AI AGENT SIMULATOR (DEMO CONSOLE)
+             ===================================================== -->
+        <section class="section ai-demo-section reveal-on-scroll" id="agentes">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">✨ Agentización Inteligente</div>
+                    <h2 class="section-title">Experimenta el poder de los <span class="gradient-text">Agentes de IA Homtrya</span></h2>
+                    <p class="section-subtitle">
+                        Nuestros agentes autónomos ejecutan tareas complejas, auditan finanzas, gestionan emergencias y coordinan proveedores en segundos, no en días.
+                    </p>
+                </div>
+
+                <div class="ai-console-wrapper" id="demo">
+                    <!-- Left: Scenario selector -->
+                    <div class="ai-console-sidebar">
+                        <div class="sidebar-title">Selecciona una instrucción de prueba:</div>
+                        <button class="prompt-btn active" data-scenario="pqr" id="btn-scenario-pqr">
+                            <span class="prompt-icon">🚨</span>
+                            <span>Emergencia & PQR en ducto</span>
+                        </button>
+                        <button class="prompt-btn" data-scenario="budget" id="btn-scenario-budget">
+                            <span class="prompt-icon">💰</span>
+                            <span>Auditoría de Presupuesto Mensual</span>
+                        </button>
+                        <button class="prompt-btn" data-scenario="assembly" id="btn-scenario-assembly">
+                            <span class="prompt-icon">📜</span>
+                            <span>Generación de Acta de Asamblea</span>
+                        </button>
+                        <button class="prompt-btn" data-scenario="booking" id="btn-scenario-booking">
+                            <span class="prompt-icon">📅</span>
+                            <span>Reserva de Zona Común & QRs</span>
+                        </button>
+                    </div>
+
+                    <!-- Right: Live AI Screen -->
+                    <div class="ai-console-screen">
+                        <div class="console-header-bar">
+                            <div class="console-status">
+                                <span class="pulse-dot"></span>
+                                <span>HOMTRYA AI CORE v3.4 // LIVE AGENT INSTANCE</span>
+                            </div>
+                            <div style="color: var(--text-muted); font-size: 0.8rem; font-family: var(--font-mono);">
+                                LATENCIA: 18ms
+                            </div>
+                        </div>
+
+                        <div class="console-log-box">
+                            <div style="color: var(--primary-300); font-size: 0.8rem;">
+                                &gt; Entrada de Solicitud:
+                            </div>
+                            <div style="color: #ffffff; font-weight: 600; font-size: 0.95rem;" id="console-user-prompt">
+                                "Resident #402: 'Se presenta filtración de agua en ducto principal Torre 2'"
+                            </div>
+                            <div style="height: 1px; background: rgba(255,255,255,0.08); margin-block: 0.25rem;"></div>
+                            
+                            <div class="ai-msg-incoming">
+                                <span class="ai-badge">HOMTRYA AGENT</span>
+                                <div id="console-agent-response" style="line-height: 1.55; color: var(--text-secondary);">
+                                    Agente Homtrya AI activado. Categorizado como Emergencia Hidráulica Prioridad 1. 1) Notificación enviada al fontanero de turno y conserjería vía WhatsApp empresarial. 2) Válvula de paso parcial programada para inspección. 3) Copropietario notificado con ticket #HY-8921 y tiempo estimado de llegada: 18 minutos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ai-resolution-card">
+                            <div class="res-item">
+                                <span id="res1-label">Tiempo de Respuesta</span>
+                                <strong id="res1-val">1.4 seg</strong>
+                            </div>
+                            <div class="res-item">
+                                <span id="res2-label">Acción Ejecutada</span>
+                                <strong id="res2-val">Proveedor despachado</strong>
+                            </div>
+                            <div class="res-item">
+                                <span id="res3-label">Estado Ticket</span>
+                                <strong id="res3-val">En Ruta (Prioridad Alta)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             4. SERVICES & FEATURES (6 INTERACTIVE 3D FLIP CARDS)
+             ===================================================== -->
+        <section class="section services-section reveal-on-scroll" id="servicios">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">🚀 Soluciones Integrales</div>
+                    <h2 class="section-title">Tecnología de punta para cada <span class="gradient-text">proceso de la copropiedad</span></h2>
+                    <p class="section-subtitle">
+                        Haz hover (o toca en móvil) sobre cada tarjeta para descubrir cómo Homtrya transforma cada área de la administración con inteligencia artificial.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: AI Agents & PQR -->
+                    <div class="service-card-flip" tabindex="0" aria-label="Tarjeta Servicio Agentes de IA y PQRs">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-image-box">
+                                    <img src="images/service_1.png" alt="Agentes de IA para Gestión y PQRs" class="service-image" loading="lazy">
+                                </div>
+                                <div class="service-front-overlay">
+                                    <span class="service-tag-pill">Inteligencia 24/7</span>
+                                    <h3 class="service-title-front">Agentes de IA y Resolución de PQRs</h3>
+                                    <div class="flip-hint">
+                                        <span>Girar para ver detalles</span>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-card-back">
+                                <div class="service-back-header">
+                                    <div class="service-icon-wrap">🤖</div>
+                                    <h3 class="service-title-back">Agentes Autónomos de IA</h3>
+                                    <p class="service-description">
+                                        Atención inmediata 24/7 a copropietarios y residentes. Clasificación automática de urgencias, asignación de tareas operativas y seguimiento en tiempo real sin saturar al administrador.
+                                    </p>
+                                </div>
+                                <div class="service-features">
+                                    <span class="feature-tag">PQRs en &lt; 2 min</span>
+                                    <span class="feature-tag">WhatsApp Multiagente</span>
+                                    <span class="feature-tag">Despacho Automático</span>
+                                </div>
+                                <div class="service-back-footer">
+                                    <a href="#contacto" class="service-action-link">
+                                        <span>Solicitar demo</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Financial Control & Audit -->
+                    <div class="service-card-flip" tabindex="0" aria-label="Tarjeta Servicio Control Financiero y Presupuesto">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-image-box">
+                                    <img src="images/service_2.png" alt="Control Financiero y Presupuesto" class="service-image" loading="lazy">
+                                </div>
+                                <div class="service-front-overlay">
+                                    <span class="service-tag-pill">Transparencia Total</span>
+                                    <h3 class="service-title-front">Control Financiero & Presupuesto</h3>
+                                    <div class="flip-hint">
+                                        <span>Girar para ver detalles</span>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-card-back">
+                                <div class="service-back-header">
+                                    <div class="service-icon-wrap">📊</div>
+                                    <h3 class="service-title-back">Auditoría & Revisoría Fiscal</h3>
+                                    <p class="service-description">
+                                        Optimización del gasto y garantía estricta del cumplimiento presupuestal. Conciliación bancaria en segundos, detección temprana de sobrecostos y reportes contables auditables.
+                                    </p>
+                                </div>
+                                <div class="service-features">
+                                    <span class="feature-tag">Conciliación Instantánea</span>
+                                    <span class="feature-tag">Control de Cartera</span>
+                                    <span class="feature-tag">Alertas de Desvío</span>
+                                </div>
+                                <div class="service-back-footer">
+                                    <a href="#contacto" class="service-action-link">
+                                        <span>Solicitar demo</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Council & Governance -->
+                    <div class="service-card-flip" tabindex="0" aria-label="Tarjeta Servicio Portal de Consejos de Administración">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-image-box">
+                                    <img src="images/service_3.png" alt="Portal de Consejos de Administración" class="service-image" loading="lazy">
+                                </div>
+                                <div class="service-front-overlay">
+                                    <span class="service-tag-pill">Gobernanza Ágil</span>
+                                    <h3 class="service-title-front">Consejos & Asambleas Digitales</h3>
+                                    <div class="flip-hint">
+                                        <span>Girar para ver detalles</span>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-card-back">
+                                <div class="service-back-header">
+                                    <div class="service-icon-wrap">🏛️</div>
+                                    <h3 class="service-title-back">Portal de Decisiones Ejecutivas</h3>
+                                    <p class="service-description">
+                                        Facilita la toma de decisiones del Consejo de Administración con analítica predictiva, seguimiento riguroso de acuerdos de asambleas ordinarias y extraordinarias, y actas automáticas.
+                                    </p>
+                                </div>
+                                <div class="service-features">
+                                    <span class="feature-tag">Votación en Tiempo Real</span>
+                                    <span class="feature-tag">Control de Quórum</span>
+                                    <span class="feature-tag">Actas Certificadas</span>
+                                </div>
+                                <div class="service-back-footer">
+                                    <a href="#contacto" class="service-action-link">
+                                        <span>Solicitar demo</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Resident Experience -->
+                    <div class="service-card-flip" tabindex="0" aria-label="Tarjeta Servicio Experiencia para Residentes">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-image-box">
+                                    <img src="images/service_4.png" alt="Experiencia 360 para Residentes" class="service-image" loading="lazy">
+                                </div>
+                                <div class="service-front-overlay">
+                                    <span class="service-tag-pill">Convivencia 360°</span>
+                                    <h3 class="service-title-front">Experiencia para Residentes</h3>
+                                    <div class="flip-hint">
+                                        <span>Girar para ver detalles</span>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-card-back">
+                                <div class="service-back-header">
+                                    <div class="service-icon-wrap">📲</div>
+                                    <h3 class="service-title-back">App de Comunidad & Accesos</h3>
+                                    <p class="service-description">
+                                        Experiencia premium para residentes, copropietarios y visitantes. Reserva de amenidades, citofonía virtual en el móvil, llaves digitales y comunicación vecinal armoniosa.
+                                    </p>
+                                </div>
+                                <div class="service-features">
+                                    <span class="feature-tag">Reserva de Zonas</span>
+                                    <span class="feature-tag">Citofonía en la Nube</span>
+                                    <span class="feature-tag">QRs de Invitados</span>
+                                </div>
+                                <div class="service-back-footer">
+                                    <a href="#contacto" class="service-action-link">
+                                        <span>Solicitar demo</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Vendors & Operations -->
+                    <div class="service-card-flip" tabindex="0" aria-label="Tarjeta Servicio Proveedores y Mantenimiento">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-image-box">
+                                    <img src="images/service_5.png" alt="Gestión de Proveedores y Mantenimiento" class="service-image" loading="lazy">
+                                </div>
+                                <div class="service-front-overlay">
+                                    <span class="service-tag-pill">Operaciones 100% Confiables</span>
+                                    <h3 class="service-title-front">Proveedores & Mantenimientos</h3>
+                                    <div class="flip-hint">
+                                        <span>Girar para ver detalles</span>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-card-back">
+                                <div class="service-back-header">
+                                    <div class="service-icon-wrap">🛠️</div>
+                                    <h3 class="service-title-back">Control Operativo & Contratistas</h3>
+                                    <p class="service-description">
+                                        Supervisión estricta de trabajadores, personal de seguridad y proveedores. Gestión digital de órdenes de compra, control de garantías, bitácoras de rondas y mantenimiento preventivo.
+                                    </p>
+                                </div>
+                                <div class="service-features">
+                                    <span class="feature-tag">Mantenimiento Preventivo</span>
+                                    <span class="feature-tag">Rondas con Geolocalización</span>
+                                    <span class="feature-tag">Control de Garantías</span>
+                                </div>
+                                <div class="service-back-footer">
+                                    <a href="#contacto" class="service-action-link">
+                                        <span>Solicitar demo</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Legal & Compliance -->
+                    <div class="service-card-flip" tabindex="0" aria-label="Tarjeta Servicio Cumplimiento Legal y Normativo">
+                        <div class="service-card-inner">
+                            <div class="service-card-front">
+                                <div class="service-image-box">
+                                    <img src="images/service_6.png" alt="Cumplimiento Legal y Normativo" class="service-image" loading="lazy">
+                                </div>
+                                <div class="service-front-overlay">
+                                    <span class="service-tag-pill">Seguridad Jurídica</span>
+                                    <h3 class="service-title-front">Cumplimiento Legal & Normativa</h3>
+                                    <div class="flip-hint">
+                                        <span>Girar para ver detalles</span>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-card-back">
+                                <div class="service-back-header">
+                                    <div class="service-icon-wrap">⚖️</div>
+                                    <h3 class="service-title-back">Blindaje Legal & Convivencia</h3>
+                                    <p class="service-description">
+                                        Cumplimiento irrestricto de la legislación de propiedad horizontal, contabilidad y normas de convivencia. Archivo digital inmutable, manuales de convivencia interactivos y mediación pacífica.
+                                    </p>
+                                </div>
+                                <div class="service-features">
+                                    <span class="feature-tag">Blindaje Jurídico</span>
+                                    <span class="feature-tag">Archivo Digital Seguro</span>
+                                    <span class="feature-tag">Comité de Convivencia</span>
+                                </div>
+                                <div class="service-back-footer">
+                                    <a href="#contacto" class="service-action-link">
+                                        <span>Solicitar demo</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             5. STAKEHOLDER ECOSYSTEM (BENEFICIOS POR ACTOR)
+             ===================================================== -->
+        <section class="section ecosystem-section reveal-on-scroll" id="ecosistema">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">👥 Impacto 360°</div>
+                    <h2 class="section-title">Diseñado para beneficiar a <span class="gradient-text">todos los actores de la copropiedad</span></h2>
+                    <p class="section-subtitle">
+                        Homtrya alinea los intereses de administradores, consejos, residentes, revisores y proveedores en una sola plataforma armónica.
+                    </p>
+                </div>
+
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="tab-admin">🏢 Administradores</button>
+                    <button class="tab-btn" data-tab="tab-consejo">🏛️ Consejos de Administración</button>
+                    <button class="tab-btn" data-tab="tab-residentes">👨‍👩‍👧‍👦 Residentes & Copropietarios</button>
+                    <button class="tab-btn" data-tab="tab-contabilidad">📊 Revisoría Fiscal & Contabilidad</button>
+                    <button class="tab-btn" data-tab="tab-proveedores">🔧 Proveedores & Operativos</button>
+                </div>
+
+                <!-- Tab 1: Administradores -->
+                <div class="tab-content-panel active" id="tab-admin">
+                    <div class="tab-text">
+                        <h3>Multiplica tu capacidad operativa sin agotarte</h3>
+                        <p>
+                            Delega hasta el 85% de las tareas operativas, contestación repetitiva de mensajes y cotizaciones en los agentes de IA de Homtrya, permitiéndote administrar más unidades con mayor rentabilidad y sin estrés.
+                        </p>
+                        <ul class="tab-checklist">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Automatización de cobranza y paz y salvos automáticos.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Centralización de todas las copropiedades en un único panel maestro.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Reportes ejecutivos automáticos para presentar al consejo en 1 clic.</span></li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary btn-sm">Optimizar mi administración</a>
+                    </div>
+                    <div class="tab-highlight-card">
+                        <div class="highlight-metric">-85%</div>
+                        <div style="color: var(--text-primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Carga Operativa Diaria</div>
+                        <p style="font-size: 0.88rem; color: var(--text-tertiary);">Ahorra hasta 35 horas semanales por copropiedad administrada.</p>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Consejos -->
+                <div class="tab-content-panel" id="tab-consejo">
+                    <div class="tab-text">
+                        <h3>Transparencia total y control de decisiones en tiempo real</h3>
+                        <p>
+                            Acceso a tableros analíticos en vivo para supervisar la ejecución presupuestal, estado de cartera, contratos activos y cumplimiento de tareas aprobadas en asamblea ordinaria y extraordinaria.
+                        </p>
+                        <ul class="tab-checklist">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Trazabilidad de cada peso recaudado y gastado sin sorpresas.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Historial inalterable de votaciones, acuerdos y actas del consejo.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Alertas preventivas ante posibles desvíos presupuestales.</span></li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary btn-sm">Conocer portal para consejos</a>
+                    </div>
+                    <div class="tab-highlight-card">
+                        <div class="highlight-metric">100%</div>
+                        <div style="color: var(--text-primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Transparencia Financiera</div>
+                        <p style="font-size: 0.88rem; color: var(--text-tertiary);">Reportes en vivo accesibles para todos los miembros del consejo.</p>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Residentes -->
+                <div class="tab-content-panel" id="tab-residentes">
+                    <div class="tab-text">
+                        <h3>La mejor experiencia de vida en tu condominio</h3>
+                        <p>
+                            Disfruta de una aplicación intuitiva donde resolver cualquier necesidad de tu hogar: pagar cuotas de administración sin filas, reservar el área social o piscina al instante y reportar novedades con respuesta en minutos.
+                        </p>
+                        <ul class="tab-checklist">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Citofonía inteligente y alertas de paquetes en tu smartphone.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Invitaciones con código QR seguro para agilizar el ingreso de visitas.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Canal de comunicación transparente con la administración y vecinos.</span></li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary btn-sm">Ver App de Residentes</a>
+                    </div>
+                    <div class="tab-highlight-card">
+                        <div class="highlight-metric">&lt; 3min</div>
+                        <div style="color: var(--text-primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Respuesta a Solicitudes</div>
+                        <p style="font-size: 0.88rem; color: var(--text-tertiary);">98.4% de satisfacción en encuestas de copropietarios.</p>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Contabilidad -->
+                <div class="tab-content-panel" id="tab-contabilidad">
+                    <div class="tab-text">
+                        <h3>Conciliación automática y cumplimiento tributario estricto</h3>
+                        <p>
+                            Elimina horas de digitación manual de extractos bancarios. Homtrya sincroniza automáticamente pagos recibidos, emite facturación electrónica y genera balances clasificados bajo normas contables vigentes.
+                        </p>
+                        <ul class="tab-checklist">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Conciliación bancaria automatizada con inteligencia artificial.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Auditoría continua para facilitar la labor del revisor fiscal.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Generación de certificados de retención y estados financieros en PDF/Excel.</span></li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary btn-sm">Explorar módulo contable</a>
+                    </div>
+                    <div class="tab-highlight-card">
+                        <div class="highlight-metric">0</div>
+                        <div style="color: var(--text-primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Errores de Conciliación</div>
+                        <p style="font-size: 0.88rem; color: var(--text-tertiary);">Sincronización bancaria 100% precisa y trazable.</p>
+                    </div>
+                </div>
+
+                <!-- Tab 5: Proveedores -->
+                <div class="tab-content-panel" id="tab-proveedores">
+                    <div class="tab-text">
+                        <h3>Gestión transparente de órdenes de trabajo y garantías</h3>
+                        <p>
+                            Los proveedores y trabajadores de la copropiedad reciben órdenes claras, registran sus ingresos y evidencias fotográficas de servicios prestados, acelerando los procesos de aprobación y pago.
+                        </p>
+                        <ul class="tab-checklist">
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Bitácora digital de mantenimiento preventivo y correctivo.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Registro de pólizas, ARL y seguridad social antes del ingreso.</span></li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>Calificación de desempeño de contratistas para futuras contrataciones.</span></li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary btn-sm">Ver módulo de contratistas</a>
+                    </div>
+                    <div class="tab-highlight-card">
+                        <div class="highlight-metric">+40%</div>
+                        <div style="color: var(--text-primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Efectividad en Mantenimientos</div>
+                        <p style="font-size: 0.88rem; color: var(--text-tertiary);">Cero retrasos en garantías y mantenimientos programados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             6. ROI & SAVINGS CALCULATOR
+             ===================================================== -->
+        <section class="section calculator-section reveal-on-scroll" id="calculadora">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">📈 Impacto Financiero</div>
+                    <h2 class="section-title">Calcula el ahorro para tu <span class="gradient-text">copropiedad o administración</span></h2>
+                    <p class="section-subtitle">
+                        Mueve los controles para estimar el ahorro mensual y anual en tiempo y optimización presupuestal implementando Homtrya.
+                    </p>
+                </div>
+
+                <div class="calc-card">
+                    <div class="calc-controls">
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="slider-units">Número de Unidades / Apartamentos:</label>
+                                <span class="slider-val" id="val-units">120 Unidades</span>
+                            </div>
+                            <input type="range" min="20" max="800" value="120" step="10" class="calc-slider" id="slider-units">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="slider-budget">Presupuesto Mensual de la Copropiedad:</label>
+                                <span class="slider-val" id="val-budget">$35M COP / mes</span>
+                            </div>
+                            <input type="range" min="5" max="250" value="35" step="5" class="calc-slider" id="slider-budget">
+                        </div>
+
+                        <div style="font-size: 0.85rem; color: var(--text-tertiary); line-height: 1.5; border-left: 2px solid var(--primary-500); padding-left: 1rem;">
+                            * Estimación basada en métricas promedio de copropiedades optimizadas con Homtrya AI (reducción del 85% en tiempos de gestión y 14% de ahorro por control estricto de sobrecostos y mantenimiento preventivo).
+                        </div>
+                    </div>
+
+                    <div class="calc-results">
+                        <div class="result-row">
+                            <div class="result-title">Tiempo ahorrado por la administración:</div>
+                            <div class="result-big-value gradient-text" id="calc-hours-saved">54 hrs/mes</div>
+                        </div>
+
+                        <div class="result-row">
+                            <div class="result-title">Ahorro mensual proyectado en sobrecostos:</div>
+                            <div class="result-big-value" style="color: var(--success);" id="calc-cost-saved">$4.9M COP/mes</div>
+                        </div>
+
+                        <div class="result-row">
+                            <div class="result-title">Tiempo medio de atención a residentes:</div>
+                            <div class="result-big-value" style="color: var(--primary-300);" id="calc-response-time">&lt; 3 minutos</div>
+                        </div>
+
+                        <div class="result-highlight-box">
+                            <span>Ahorro Anual Estimado para la Copropiedad</span>
+                            <strong id="calc-total-savings">$58.8M COP / año</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             7. TESTIMONIALS & CASE STUDIES
+             ===================================================== -->
+        <section class="section testimonials-section reveal-on-scroll" id="testimonios">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">⭐ Casos de Éxito</div>
+                    <h2 class="section-title">Lo que dicen quienes ya administran con <span class="gradient-text">Homtrya</span></h2>
+                    <p class="section-subtitle">
+                        Testimonios reales de administradores profesionales, presidentes de consejo y revisores fiscales.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars-rating">★★★★★</div>
+                        <p class="testimonial-quote">
+                            "Antes de Homtrya, el 70% de mi día se iba respondiendo WhatsApps de quejas y buscando comprobantes de pago. Hoy los agentes de IA resuelven las PQRs al instante y los residentes están felices. Pude tomar 4 condominios más sin contratar más personal."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CR</div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <p>Administrador de 8 Copropiedades (Medellín)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars-rating">★★★★★</div>
+                        <p class="testimonial-quote">
+                            "Como presidente del Consejo, nunca había tenido tanta claridad sobre el presupuesto. Homtrya nos alerta en tiempo real si un rubro se está excediendo y las actas de asamblea quedan impecables en minutos. La asamblea general fue la más tranquila en 10 años."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MV</div>
+                            <div class="author-info">
+                                <h4>Mariana Valenzuela</h4>
+                                <p>Presidenta de Consejo - Condominio Altos del Parque</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars-rating">★★★★★</div>
+                        <p class="testimonial-quote">
+                            "La conciliación contable automática es una maravilla. El módulo de revisoría fiscal nos permite auditar en tiempo real y emitir estados financieros exactos bajo la Ley 675. Cero estrés en cierre de mes."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">FH</div>
+                            <div class="author-info">
+                                <h4>Fernando Henao</h4>
+                                <p>Revisor Fiscal & Contador Público Especializado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             8. FAQ SECTION
+             ===================================================== -->
+        <section class="section faq-section reveal-on-scroll" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">❓ Preguntas Frecuentes</div>
+                    <h2 class="section-title">Resolvemos todas tus dudas sobre <span class="gradient-text">Homtrya</span></h2>
+                    <p class="section-subtitle">
+                        Todo lo que necesitas saber sobre implementación, seguridad de datos y soporte.
+                    </p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item active">
+                        <button class="faq-question">
+                            <span>¿Cuánto tiempo toma implementar Homtrya en una copropiedad?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                La configuración inicial toma menos de 48 horas. Nuestro equipo de onboarding migra tu base de datos de copropietarios, coeficientes, cartera y proveedores sin interrumpir la operación habitual de tu edificio o conjunto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo interactúan los residentes con los Agentes de IA?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Los residentes pueden interactuar a través de su canal preferido: WhatsApp empresarial oficial de la copropiedad, la app móvil de Homtrya o el portal web. Los agentes comprenden lenguaje natural, audios y fotos de daños para generar tickets y respuestas inmediatas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Homtrya cumple con la legislación de Propiedad Horizontal y Protección de Datos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Sí, 100%. Homtrya está diseñada en estricto cumplimiento de la Ley de Propiedad Horizontal (Ley 675 y normativas latinoamericanas), estándares de Hábeas Data y cifrado de grado bancario ISO/IEC 27001 para garantizar la máxima confidencialidad.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Es compatible con el software contable que ya utilizamos?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Sí. Homtrya cuenta con API abierta e importadores automáticos compatibles con los principales sistemas contables (Siigo, World Office, Daytona, Helisa, QuickBooks y Excel) para sincronizar pagos y facturación sin reprocesos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Qué soporte y capacitación recibe la administración y el consejo?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Incluimos sesiones de capacitación personalizada para administradores, miembros del consejo y personal de portería, además de soporte prioritario 24/7 vía chat y asesor dedicado de éxito del cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             9. FINAL HIGH IMPACT CTA
+             ===================================================== -->
+        <section class="final-cta-section reveal-on-scroll" id="contacto">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="section-tag" style="margin-bottom: 1.5rem;">🔥 Comienza la Transformación</div>
+                    <h2 class="cta-title">
+                        Lleva la administración de tu copropiedad al <br>
+                        <span class="gradient-text">siguiente nivel de eficiencia con IA</span>
+                    </h2>
+                    <p class="cta-subtitle">
+                        Agenda una demostración guiada de 15 minutos y descubre cómo Homtrya ahorra costos, optimiza presupuestos y eleva la calidad de vida de toda tu comunidad.
+                    </p>
+
+                    <div class="cta-actions">
+                        <a href="https://wa.me/?text=Hola%20Homtrya,%20deseo%20agendar%20una%20demostración%20para%20mi%20copropiedad" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="btn-final-cta-whatsapp">
+                            <span>Solicitar Demostración Gratis</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#demo" class="btn btn-secondary btn-lg" id="btn-final-cta-test">
+                            <span>Probar Simulador de Agentes</span>
+                        </a>
+                    </div>
+
+                    <div class="cta-features-badges">
+                        <div class="badge-feature">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>
+                            <span>Sin costo de instalación inicial</span>
+                        </div>
+                        <div class="badge-feature">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>
+                            <span>Migración de datos guiada</span>
+                        </div>
+                        <div class="badge-feature">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>
+                            <span>Soporte 24/7 para tu comunidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================
+         10. FOOTER
+         ===================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="#hero" class="nav-brand">
+                        <img src="images/logo.png" alt="Homtrya Logo" class="brand-logo-img" width="40" height="40">
+                        <span class="brand-text">Homtrya</span>
+                    </a>
+                    <p class="footer-tagline">
+                        <strong>Más administración, fácil, rápido y seguro.</strong><br>
+                        La plataforma SaaS pionera en agentización y automatización de la propiedad horizontal en Latinoamérica.
+                    </p>
+                    <div class="social-links-row">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Plataforma</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#agentes">Agentes de IA 24/7</a></li>
+                        <li><a href="#servicios">Control Presupuestal</a></li>
+                        <li><a href="#servicios">Asambleas Digitales</a></li>
+                        <li><a href="#servicios">App para Residentes</a></li>
+                        <li><a href="#servicios">Módulo de Contratistas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Soluciones</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#ecosistema">Para Administradores</a></li>
+                        <li><a href="#ecosistema">Para Consejos</a></li>
+                        <li><a href="#ecosistema">Para Revisoría Fiscal</a></li>
+                        <li><a href="#calculadora">Calculadora de Ahorro</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal & Contacto</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Términos del Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Protección de Datos (GDPR/Habeas)</a></li>
+                        <li><a href="#">Seguridad ISO 27001</a></li>
+                        <li><a href="mailto:contacto@homtrya.com">contacto@homtrya.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>
+                    &copy; 2026 Homtrya Inc. Todos los derechos reservados.
+                </div>
+                <div style="display: flex; gap: 1.5rem;">
+                    <span>Hecho con tecnología PropTech de vanguardia</span>
+                    <span>Modo Dark Luxury</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
