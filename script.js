@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFaqAccordion();
     initScrollAnimations();
     initCounters();
+    initLeadForm();
 });
 
 /* =====================================================
@@ -369,4 +370,55 @@ function initCounters() {
     });
 
     counterElements.forEach(el => counterObserver.observe(el));
+}
+
+/* =====================================================
+   10. LEAD CAPTURE FORM
+   ===================================================== */
+function initLeadForm() {
+    const leadForm = document.getElementById('lead-form');
+    const successMessage = document.getElementById('lead-form-success');
+    const errorMessage = document.getElementById('lead-form-error');
+    if (!leadForm || !successMessage || !errorMessage) return;
+
+    // Use /webhook/lead-homtrya after activating the workflow in n8n.
+    const n8nWebhookUrl = 'http://localhost:5678/webhook/lead-homtrya';
+
+    leadForm.addEventListener('submit', async event => {
+        event.preventDefault();
+
+        const formData = new FormData(leadForm);
+        const submitButton = leadForm.querySelector('button[type="submit"]');
+        const lead = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            source: 'landing-page',
+            createdAt: new Date().toISOString()
+        };
+
+        successMessage.classList.remove('is-visible');
+        errorMessage.classList.remove('is-visible');
+        submitButton.disabled = true;
+
+        try {
+            const response = await fetch(n8nWebhookUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(lead)
+            });
+
+            if (!response.ok) {
+                throw new Error(`n8n respondió con ${response.status}`);
+            }
+
+            leadForm.reset();
+            successMessage.classList.add('is-visible');
+        } catch (error) {
+            console.error('Error enviando lead a n8n:', error);
+            errorMessage.classList.add('is-visible');
+        } finally {
+            submitButton.disabled = false;
+        }
+    });
 }

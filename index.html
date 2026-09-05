@@ -863,13 +863,33 @@
                         Agenda una demostración guiada de 15 minutos y descubre cómo Homtrya ahorra costos, optimiza presupuestos y eleva la calidad de vida de toda tu comunidad.
                     </p>
 
-                    <div class="cta-actions">
-                        <a href="https://wa.me/?text=Hola%20Homtrya,%20deseo%20agendar%20una%20demostración%20para%20mi%20copropiedad" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="btn-final-cta-whatsapp">
-                            <span>Solicitar Demostración Gratis</span>
+                    <form class="lead-form" id="lead-form">
+                        <div class="lead-form-fields">
+                            <div class="form-field">
+                                <label for="lead-name">Nombre completo</label>
+                                <input type="text" id="lead-name" name="name" autocomplete="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="lead-email">Correo electrónico</label>
+                                <input type="email" id="lead-email" name="email" autocomplete="email" placeholder="tu@empresa.com" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="lead-phone">Teléfono / WhatsApp</label>
+                                <input type="tel" id="lead-phone" name="phone" autocomplete="tel" placeholder="+57 300 000 0000" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" id="btn-final-cta-submit">
+                            <span>Quiero agendar mi demostración</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        </button>
+                        <p class="lead-form-note">Te contactaremos para coordinar una demostración personalizada de 15 minutos.</p>
+                        <p class="lead-form-success" id="lead-form-success" role="status" aria-live="polite">Gracias. Recibimos tus datos y nos pondremos en contacto contigo.</p>
+                        <p class="lead-form-error" id="lead-form-error" role="alert" aria-live="assertive">No pudimos enviar tus datos. Inténtalo nuevamente.</p>
+                    </form>
+
+                    <div class="cta-actions">
                         <a href="#demo" class="btn btn-secondary btn-lg" id="btn-final-cta-test">
-                            <span>Probar Simulador de Agentes</span>
+                            <span>Prefiero probar el simulador primero</span>
                         </a>
                     </div>
 
